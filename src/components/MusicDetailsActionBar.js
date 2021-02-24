@@ -6,7 +6,7 @@ import { Ionicons } from '@expo/vector-icons';
 import { colors } from "../ui/colors"
 import sizes from "../ui/sizes"
 
-export default MusicDetailsActionBar = () => (
+const MusicDetailsActionBar = () => (
   
   <View style={styles.container}>
     <TouchableOpacity style={styles.heart} onPress={null}>
@@ -35,3 +35,4 @@ const styles = StyleSheet.create({
   },
   share: {}
 })
+export default MusicDetailsActionBar

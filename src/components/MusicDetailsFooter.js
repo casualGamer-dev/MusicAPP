@@ -1,11 +1,11 @@
 import React from "react"
 import { View, Text, Image, StyleSheet, TouchableOpacity } from "react-native"
 import Entypo from "react-native-vector-icons/Entypo"
-
+import { Ionicons } from '@expo/vector-icons';
 import { colors } from "../ui/colors"
 import sizes from "../ui/sizes"
 
-export default MusicDetailsFooter = props => {
+const MusicDetailsFooter = props => {
   const play_btn_name = props.pauseState ? "play" : "pause"
   return (
     <View style={styles.container}>
@@ -75,3 +75,4 @@ const styles = StyleSheet.create({
   },
   nextBtn: {}
 })
+export default MusicDetailsFooter

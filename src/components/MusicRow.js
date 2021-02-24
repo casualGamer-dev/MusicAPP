@@ -12,7 +12,7 @@ import { Ionicons,Entypo } from '@expo/vector-icons';
 import CustomText from "../components/CustomText"
 import { colors } from "../ui/colors"
 import sizes from "../ui/sizes"
-
+import SearchScreen from "../screens/SearchScreen"
 const MusicRow = props => (
   <TouchableOpacity
     style={styles.container}
@@ -25,7 +25,7 @@ const MusicRow = props => (
     
         <Ionicons
           style={styles.heart_small}
-          name='heart'
+          name='ios-heart'
           size={sizes.heart_small}
           color={colors.tertiary_dark}
         />

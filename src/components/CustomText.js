@@ -1,7 +1,7 @@
 import React from "react"
 import { View, Text } from "react-native"
 
-export default CustomText = props => {
+const CustomText = props => {
   
   const font_name = props.style.fontWeight ? "PTSans-Bold" : "PTSans"
   return (
@@ -12,3 +12,4 @@ export default CustomText = props => {
     </Text>
   )
 }
+export default CustomText

@@ -5,7 +5,7 @@ import CustomText from "../components/CustomText"
 import { colors } from "../ui/colors"
 import sizes from "../ui/sizes"
 
-export default MusicDetailsHeader = props => (
+const MusicDetailsHeader = props => (
   
   <View style={styles.header}>
     <View style={styles.headerCol1}>
@@ -50,3 +50,4 @@ const styles = StyleSheet.create({
     fontSize: sizes.big_title
   }
 })
+export default MusicDetailsHeader

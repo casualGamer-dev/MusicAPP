@@ -1,4 +1,4 @@
-export default TRACKS = [
+const TRACKS = [
   {
     title: "Musics",
     data: [
@@ -68,3 +68,4 @@ export default TRACKS = [
 
 //https://drive.google.com/uc?id=1CtRQxkTSCVMdvp2a5mDrjrlXaKXPJkmr&export=download
 //kurenai_yume_to_hazakura
+export default TRACKS

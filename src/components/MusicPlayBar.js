@@ -12,7 +12,7 @@ import CustomText from "../components/CustomText"
 import { colors, blurs } from "../ui/colors"
 import sizes from "../ui/sizes"
 
-export default MusicPlayBar = props => {
+const MusicPlayBar = props => {
   const icon_name = props.pauseState ? "play" : "pause"
   return (
     <View style={{size:"100"}}>
@@ -98,3 +98,4 @@ const styles = StyleSheet.create({
     paddingStart: 10
   }
 })
+export default MusicPlayBar
