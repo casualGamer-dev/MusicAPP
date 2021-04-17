@@ -5,7 +5,8 @@ import FloatMusicDetailsView from "./FloatMusicDetailsView"
 import MusicPlayerAsync from "../components/MusicPlayerAsync"
 import MusicPlayBar from "../components/MusicPlayBar"
 import { updateMusicStatus } from "../redux/actions"
-
+import * as Font from "expo-font"
+import { Ionicons } from '@expo/vector-icons';
 const PureMusicPlayer = new MusicPlayerAsync()
 
 class StickyMusicPlayerView extends Component {

@@ -4,6 +4,7 @@ import {
   Image,
   Text,
   StyleSheet,
+  TouchableOpacity
 } from 'react-native';
 
 const styles = StyleSheet.create({
@@ -26,8 +27,10 @@ export default ({
     title,
   }
 }) => (
+  <TouchableOpacity>
   <View style={styles.container}>
     <Image source={{ uri: imageUri }} style={styles.image}/>
     <Text style={styles.title}>{title}</Text>
   </View>
+  </TouchableOpacity>
 );

@@ -1,6 +1,6 @@
 import { Provider } from "react-redux"
 import React from "react"
-
+import * as Font from "expo-font"
 import ExpoMusicApp from "./src/ExpoMusicApp"
 import store from "./src/redux/store"
 

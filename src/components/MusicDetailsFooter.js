@@ -4,7 +4,8 @@ import Entypo from "react-native-vector-icons/Entypo"
 import { Ionicons } from '@expo/vector-icons';
 import { colors } from "../ui/colors"
 import sizes from "../ui/sizes"
-
+import * as Font from "expo-font"
+import ExpoMusicApp from "../ExpoMusicApp"
 const MusicDetailsFooter = props => {
   const play_btn_name = props.pauseState ? "play" : "pause"
   return (

@@ -1,6 +1,6 @@
 import React from "react"
 import { View, Text } from "react-native"
-
+import ExpoMusicApp from "../ExpoMusicApp"
 import styles from "./styles"
 
 export default class MusicDetailsScreen extends React.Component {

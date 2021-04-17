@@ -1,7 +1,7 @@
 import React, { Component, version } from "react"
 import { View, StyleSheet, SectionList } from "react-native"
 import { connect } from "react-redux"
-
+import { Ionicons } from '@expo/vector-icons';
 import { colors } from "../ui/colors"
 import MusicRow from "../components/MusicRow"
 import MusicSectionHeader from "../components/MusicSectionHeader"

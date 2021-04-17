@@ -5,6 +5,7 @@ import MusicListView from "../containers/MusicListView"
 import styles from "./styles"
 import { colors } from "../ui/colors"
 import * as Font from "expo-font"
+import ExpoMusicApp from "../ExpoMusicApp"
 export default class MusicListScreen extends React.PureComponent {
   async componentDidMount() {
    

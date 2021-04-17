@@ -11,7 +11,8 @@ import { Ionicons } from '@expo/vector-icons';
 import CustomText from "../components/CustomText"
 import { colors, blurs } from "../ui/colors"
 import sizes from "../ui/sizes"
-
+import * as Font from "expo-font"
+import ExpoMusicApp from "../ExpoMusicApp"
 const MusicPlayBar = props => {
   const icon_name = props.pauseState ? "play" : "pause"
   return (

@@ -7,7 +7,7 @@ import { Ionicons } from '@expo/vector-icons';
 import CustomText from "../components/CustomText"
 import { colors } from "../ui/colors"
 import sizes from "../ui/sizes"
-
+import ExpoMusicApp from "../ExpoMusicApp"
 const MusicSectionHeader = props => (
   
   <View style={styles.container}>

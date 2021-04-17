@@ -5,7 +5,8 @@ import { Ionicons } from '@expo/vector-icons';
 
 import { colors } from "../ui/colors"
 import sizes from "../ui/sizes"
-
+import * as Font from "expo-font"
+import ExpoMusicApp from "../ExpoMusicApp"
 const MusicDetailsActionBar = () => (
   
   <View style={styles.container}>

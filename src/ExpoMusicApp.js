@@ -4,7 +4,7 @@ import { createStackNavigator } from "@react-navigation/stack"
 import { StatusBar } from "expo-status-bar"
 import { Text, View } from "react-native"
 import { NavigationContainer } from "@react-navigation/native"
-import { Ionicons } from '@expo/vector-icons';
+import { Ionicons,Entypo } from '@expo/vector-icons';
 import LoadingScreen from "./screens/LoadingScreen"
 import MusicDetailsScreen from "./screens/MusicDetailsScreen"
 import MusicListScreen from "./screens/MusicListScreen"
@@ -45,7 +45,8 @@ export default class ExpoMusicApp extends Component {
     await Font.loadAsync({
       'PTSans': require('../assets/fonts/PTSans-Regular.ttf'),
       'PTSans-Bold': require('../assets/fonts/PTSans-Bold.ttf'),
-      ionicons: Ionicons.font['ionicons']
+      ionicons: Ionicons.font['ionicons'],
+      Entypo: Entypo.font['entypo']
       
     })
     this.setState({ isReady: true })

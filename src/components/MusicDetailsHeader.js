@@ -4,7 +4,9 @@ import { Entypo} from '@expo/vector-icons';
 import CustomText from "../components/CustomText"
 import { colors } from "../ui/colors"
 import sizes from "../ui/sizes"
-
+import * as Font from "expo-font"
+import ExpoMusicApp from "../ExpoMusicApp"
+import { Ionicons } from '@expo/vector-icons';
 const MusicDetailsHeader = props => (
   
   <View style={styles.header}>

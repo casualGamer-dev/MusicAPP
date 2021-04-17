@@ -1,6 +1,7 @@
 import React from "react"
 import Ionicons from "react-native-vector-icons/Ionicons"
-
+import * as Font from "expo-font"
+import ExpoMusicApp from "../ExpoMusicApp"
 import { colors } from "./colors"
 import sizes from "./sizes"
 

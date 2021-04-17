@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native"
-
+import ExpoMusicApp from "../ExpoMusicApp"
 const styles = StyleSheet.create({
   container: {
     flex: 1,

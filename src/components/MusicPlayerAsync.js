@@ -1,5 +1,6 @@
 import { Audio } from "expo-av"
 import { Ionicons,Entypo } from '@expo/vector-icons';
+import ExpoMusicApp from "../ExpoMusicApp"
 export default class MusicPlayerAsync {
 
   constructor() {
@@ -9,7 +10,9 @@ export default class MusicPlayerAsync {
     this.soundObject = new Audio.Sound()
     this.source = null
     this.token = 0
-    this.first_toggle = true
+    this.first_toggle = true 
+    this.downloadFirst
+    this.tempSoundObj = new Audio.Sound()
   }
 
   setPlayback = func => {
@@ -17,14 +20,15 @@ export default class MusicPlayerAsync {
   }
 
   setMusicPosAsync = async pos => {
+    const tempSoundObj = new Audio.Sound()
     await this.pauseMusic()
     await this.soundObject.setPositionAsync(pos)
     await this.playMusic()
   }
 
   getSoundObjAsync = async (token, source) => {
-    const tempSoundObj = new Audio.Sound()
-    await tempSoundObj.loadAsync({ uri: source }, (downloadFirst = true))
+    
+    await this.tempSoundObj.loadAsync({ uri: source }, (this.downloadFirst = true))
     return [token, tempSoundObj]
   }
 
@@ -40,7 +44,7 @@ export default class MusicPlayerAsync {
       // console.log("\nReturned_token: ")
       // console.log(returned_token)
       if (this.token === returned_token) {
-        this.soundObject = tempSoundObj
+        this.soundObject = this.tempSoundObj
         await this.soundObject.setIsLoopingAsync(true)
         await this.soundObject.setProgressUpdateIntervalAsync(500)
         this.playbackFunc &&

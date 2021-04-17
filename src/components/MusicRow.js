@@ -8,7 +8,7 @@ import {
 } from "react-native"
 import { color } from "react-native-reanimated"
 import { Ionicons,Entypo } from '@expo/vector-icons';
-
+import ExpoMusicApp from "../ExpoMusicApp"
 import CustomText from "../components/CustomText"
 import { colors } from "../ui/colors"
 import sizes from "../ui/sizes"

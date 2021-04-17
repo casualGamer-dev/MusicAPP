@@ -10,14 +10,14 @@ import {
 } from "react-native"
 import { connect } from "react-redux"
 import { selectMusic } from "../redux/actions"
-
+import * as Font from "expo-font"
 import { colors, blurs } from "../ui/colors"
 import MusicDetailsHeader from "../components/MusicDetailsHeader"
 import MusicDetailsFooter from "../components/MusicDetailsFooter"
 import MusicStatusSlider from "../components/MusicStatusSlider"
 import MusicDetailsActionBar from "../components/MusicDetailsActionBar"
 import sizes from "../ui/sizes"
-
+import { Ionicons } from '@expo/vector-icons';
 class FloatMusicDetailsView extends Component {
   getMusicId = () => {
     const { data } = this.props.tracks[0]
